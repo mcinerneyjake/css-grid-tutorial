@@ -1,0 +1,43 @@
+.container {
+  display: grid;
+  gap: 3px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 40px 200px 40px;
+}
+
+.header {
+  grid-column: 2 / -1; /* <- This method stretches the div across the page no matter how many columns there are. */
+}
+
+.menu {
+  grid-row: 1 / 4;
+}
+
+.content {
+  grid-column: 2 / -1;
+}
+
+.footer {
+  grid-column: 2 / -1;
+}
+
+/* This method -> grid-column: 1 / 3; puts grid-column-start and grid-column-end together.*/
+/* This method -> grid-column: 1 / span 2; tells the grid-column to start at line 1 and span over 2 lines to get to the far side of the page. */
+
+/* The following section will place the .menu on the right-hand side of the screen. */
+/* .header {
+  grid-column: 1 / -2; 
+}
+
+.menu {
+  grid-row: 1 / 4;
+  grid-column: -1 / -2;
+}
+
+.content {
+  grid-column: 1 / -2;
+}
+
+.footer {
+  grid-column: 1 / -2;
+} */

@@ -1,0 +1,10 @@
+.container {
+  border: 1px solid black;
+  height: 100%;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(2, 100px);
+  justify-content: space-around; /* In justify-content, you can use space-between, space-evenly, space-around, or space-around for example. */
+  align-content: center;
+}

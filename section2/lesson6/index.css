@@ -1,0 +1,9 @@
+.container {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(100px, 1fr)
+  ); /* auto-fit fits the element into a specified area. That area can be defined by minmax(). */
+  grid-template-rows: repeat(2, 100px);
+}

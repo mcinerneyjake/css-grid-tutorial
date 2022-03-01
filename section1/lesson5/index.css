@@ -1,0 +1,32 @@
+.container {
+  height: 100%;
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 40px auto 40px;
+  grid-template-areas:
+    ". h h h h h h h h h h h" /* This line represents the header element and its span of 12 columns. */
+    "m c c c c c c c c c c c" /* This line represents the menu and content elements and their span of 12 columns. */
+    ". f f f f f f f f f f f"; /* This line represents the footer element and its span of 12 columns. */
+}
+
+/* You can change the letters above to give each element a new space within the browser.
+The grid-area: h; corresponds to the header element. The grid-area: m; corresponds to the menu element. 
+The grid-area: c; corresponds to the content element. The grid-area: f; corresponds to the footer element.
+If you place a dot in the grid-template-areas in .container, that particular area becomes blank.  */
+
+.header {
+  grid-area: h;
+}
+
+.menu {
+  grid-area: m;
+}
+
+.content {
+  grid-area: c;
+}
+
+.footer {
+  grid-area: f;
+}
